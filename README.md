@@ -31,7 +31,7 @@ Implementation using C or pyhton code
 
 ## PROGRAM:
 PROGRAM:
-
+```
 
 #include <stdio.h>
 #include <string.h>
@@ -98,7 +98,7 @@ int main() {
     return 0;
 }
 
-
+```
 ## OUTPUT:
 OUTPUT:
 Simulating Caesar Cipher
