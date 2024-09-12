@@ -370,7 +370,7 @@ int main() {
 Output:
 
 
-![Screenshot 2024-09-02 150903](https://github.com/user-attachments/assets/7e6898e8-0a87-4934-b4f3-9991ddedee5e)
+![Screenshot 2024-09-12 153755](https://github.com/user-attachments/assets/c735dd15-14d2-4fbd-88f2-2ded16c13f1e)
 
 ## RESULT:
 The program is executed successfully
