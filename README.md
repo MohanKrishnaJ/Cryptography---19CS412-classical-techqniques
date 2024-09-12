@@ -624,7 +624,8 @@ void decipher() {
 
 ## OUTPUT:
 OUTPUT :
-![Screenshot 2024-09-02 153212](https://github.com/user-attachments/assets/e7c3089d-6f88-4bd3-aa5e-cb10bfa4653f)
+![Screenshot 2024-09-12 154659](https://github.com/user-attachments/assets/038e0a67-a447-4340-aa5e-f8b530c5a6d4)
+
 
 
 
@@ -769,7 +770,8 @@ int main() {
 ```
 ## OUTPUT:
 
-![Screenshot 2024-09-05 084646](https://github.com/user-attachments/assets/b322c001-be75-4487-8199-077d2b45024e)
+![Screenshot 2024-09-12 154659](https://github.com/user-attachments/assets/e3c0f81e-72c1-4178-8ba0-17dac210de0f)
+
 
 
 
