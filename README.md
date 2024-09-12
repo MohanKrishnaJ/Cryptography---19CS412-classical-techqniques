@@ -507,7 +507,8 @@ int main() {
 ## OUTPUT:
 OUTPUT:
 Simulating Hill Cipher
-![Screenshot 2024-09-02 152329](https://github.com/user-attachments/assets/2b5d242f-76e5-46b9-b215-be8d55587900)
+![Screenshot 2024-09-12 154045](https://github.com/user-attachments/assets/3c38ff83-d4c1-4bed-8e7c-177154edb056)
+
 
 
 ## RESULT:
