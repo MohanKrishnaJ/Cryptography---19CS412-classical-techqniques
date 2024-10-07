@@ -275,3 +275,159 @@ The program is executed successfully
 
 
 ---------------------------
+# Hill Cipher
+Hill Cipher using with different key values
+
+# AIM:
+
+To develop a simple C program to implement Hill Cipher.
+
+## DESIGN STEPS:
+
+### Step 1:
+
+Design of Hill Cipher algorithnm 
+
+### Step 2:
+
+Implementation using C or pyhton code
+
+### Step 3:
+
+Testing algorithm with different key values. 
+
+## PROGRAM:
+```
+#include <stdio.h>
+
+int main() 
+{
+    unsigned int key[3][3] = {{6, 24, 1}, {13, 16, 10}, {20, 17, 15}};
+    unsigned int inverseKey[3][3] = {{8, 5, 10}, {21, 8, 21}, {21, 12, 8}};
+
+    char msg[4];
+    unsigned int enc[3] = {0}, dec[3] = {0};
+
+    printf("Enter plain text: ");
+    scanf("%3s", msg);
+
+    for (int i = 0; i < 3; i++)
+        for (int j = 0; j < 3; j++)
+            enc[i] += key[i][j] * (msg[j] - 'A') % 26;
+
+    printf("Encrypted Cipher Text: %c%c%c\n", enc[0] % 26 + 'A', enc[1] % 26 + 'A', enc[2] % 26 + 'A');
+
+    for (int i = 0; i < 3; i++)
+        for (int j = 0; j < 3; j++)
+            dec[i] += inverseKey[i][j] * enc[j] % 26;
+
+    printf("Decrypted Cipher Text: %c%c%c\n", dec[0] % 26 + 'A', dec[1] % 26 + 'A', dec[2] % 26 + 'A');
+
+    return 0;
+}
+```
+## OUTPUT:
+![Screenshot 2024-10-07 085852](https://github.com/user-attachments/assets/05b397d9-f62e-4e18-b7b6-c4d87cd38f50)
+
+## RESULT:
+The program is executed successfully
+
+-------------------------------------------------
+
+# Vigenere Cipher
+Vigenere Cipher using with different key values
+
+# AIM:
+
+To develop a simple C program to implement Vigenere Cipher.
+
+## DESIGN STEPS:
+
+### Step 1:
+
+Design of Vigenere Cipher algorithnm 
+
+### Step 2:
+
+Implementation using C or pyhton code
+
+### Step 3:
+
+Testing algorithm with different key values. 
+
+## PROGRAM:
+```
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+
+#define MAX_LENGTH 100
+
+int main() 
+{
+    char input[MAX_LENGTH];
+    char key[MAX_LENGTH];
+    char result[MAX_LENGTH];
+
+    printf("Enter the text to encrypt: ");
+    fgets(input, MAX_LENGTH, stdin);
+    input[strcspn(input, "\n")] = '\0'; 
+
+    printf("Enter the key: ");
+    fgets(key, MAX_LENGTH, stdin);
+    key[strcspn(key, "\n")] = '\0'; 
+
+    int inputLength = strlen(input);
+    int keyLength = strlen(key);
+
+    for (int i = 0, j = 0; i < inputLength; ++i) 
+    {
+        char currentChar = input[i];
+
+        if (isalpha(currentChar))
+        {
+            int shift = toupper(key[j % keyLength]) - 'A';
+            int base = isupper(currentChar) ? 'A' : 'a';
+
+            result[i] = ((currentChar - base + shift + 26) % 26) + base;
+            ++j;
+        }
+        else
+        {
+            result[i] = currentChar;
+        }
+    }
+
+    result[inputLength] = '\0';
+    printf("Encrypted text: %s\n", result);
+
+    for (int i = 0, j = 0; i < inputLength; ++i) 
+    {
+        char currentChar = result[i];
+
+        if (isalpha(currentChar)) 
+        {
+            int shift = toupper(key[j % keyLength]) - 'A';
+            int base = isupper(currentChar) ? 'A' : 'a';
+
+            result[i] = ((currentChar - base - shift + 26) % 26) + base;
+            ++j;
+        }
+    }
+
+    result[inputLength] = '\0';
+    printf("Decrypted text: %s\n", result);
+
+    return 0;
+}
+```
+
+## OUTPUT:
+![image](https://github.com/surrey-78/Cryptography---19CS412-classical-techqniques/assets/119559366/429aab90-dd87-4912-bccd-d03328030bfd)
+
+
+## RESULT:
+The program is executed successfully
+
+-----------------------------------------------------------------------
+
