@@ -423,7 +423,8 @@ int main()
 ```
 
 ## OUTPUT:
-![image](https://github.com/surrey-78/Cryptography---19CS412-classical-techqniques/assets/119559366/429aab90-dd87-4912-bccd-d03328030bfd)
+![Screenshot 2024-10-07 090119](https://github.com/user-attachments/assets/e35d20eb-2f73-4e37-a864-a68cdc1e8b24)
+
 
 
 ## RESULT:
